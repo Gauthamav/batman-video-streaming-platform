@@ -1,9 +1,11 @@
 
 export const LOGO_URL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXSPhPf2I09aEyIHn8h1bHyWyTz4TU_Glfg&s"
 
-export const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
 
-export const YOUTUBE_VIDEOS_API = "https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&chart=mostPopular&maxResults=50&regionCode=US&key="+API_KEY;
+export const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
+
+
+export const YOUTUBE_VIDEOS_API = "https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&chart=mostPopular&maxResults=50&regionCode=IN&key=";
 
 
 

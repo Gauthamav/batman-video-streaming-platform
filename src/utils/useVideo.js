@@ -1,5 +1,5 @@
 
-import { YOUTUBE_VIDEOS_API } from "./constant"
+import { API_KEY, YOUTUBE_VIDEOS_API } from "./constant"
 import { useEffect} from "react"
 import { useState } from "react"
 
@@ -17,7 +17,7 @@ const useVideo = () => {
          
         const getVideos = async() => 
             {
-            const data = await fetch(YOUTUBE_VIDEOS_API)
+            const data = await fetch(YOUTUBE_VIDEOS_API+API_KEY)
             const response = await data?.json()
             setVideoData(response?.items)
            
