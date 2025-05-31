@@ -95,53 +95,7 @@ Body
  
 
    
-           <div className="flex flex-col gap-8 h-full w-52 pl-2 bg-slate-50 shadow-lg">
-           <div className="flex  items-center gap-5 pl-5 py-4 mt-8 hover:bg-slate-200 rounded-2xl">
-          
-            <h2 className="font-bold">Home</h2 >
-            </div>
-            <div className="flex items-center gap-5 pl-5 py-4 hover:bg-slate-200 rounded-2xl">
-           
-            <h2 className="font-bold">Shorts</h2 >   
-                  </div>
-
-                  <div className="flex items-center gap-5 pl-5 py-4 hover:bg-slate-200 rounded-2xl">
-            
-            <h2 className="font-bold">Subscription</h2>   
-                  </div>
-
-                  <div className="flex items-center gap-5 pl-5 py-4 hover:bg-slate-200 rounded-2xl">
-          
-            <h2 className="font-bold">History</h2>   
-                  </div>
-
                
-                  <div className="flex items-center gap-5 pl-5 py-4 hover:bg-slate-200 rounded-2xl">
-          
-            <h2 className="font-bold">Your videos</h2>   
-                  </div>
-
-                  <div className="flex items-center gap-5 pl-5 py-4 hover:bg-slate-200 rounded-2xl">
-          
-            <h2 className="font-bold">Watch later</h2>   
-                  </div>
-
-                  <div className="flex items-center gap-5 pl-5 py-4  hover:bg-slate-200 rounded-2xl">
-        
-            <h2 className="font-bold">Liked videos</h2 >   
-                  </div>
-
-
-
-
-                
-
-                  <div>
-                    <h3 className="font-bold">
-                        Subscription
-                    </h3>
-
-                     // bg-slate-50
 
 
 
