@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { addCache } from '../utils/searchSuggestionSlice';
 import { suggestionClose, suggestionOpen } from '../utils/searchRecommendationSlice';
 import { useNavigate } from 'react-router-dom';
-import { API_KEY } from '../utils/constant';
+
 const Header = () => {
   const [searchSuggestion, setSearchSuggestion] = useState([]);
   const [searchText, setSearchText] = useState('');
@@ -15,7 +15,6 @@ const Header = () => {
 
   const searchCache = useSelector(store => store.search);
   const dispatch = useDispatch();
-  const showSuggestion = useSelector(store => store.recommendation.isSuggestionOpen);
 
   const toggleMenuHandler = () => {
     dispatch(toggleMenu());
@@ -68,7 +67,7 @@ const Header = () => {
     <div className="bg-black fixed gap-[20px] top-0 left-0 w-full z-50 flex h-28 items-center justify-between shadow-xl  ">
       <div className="ml-6 flex lg:gap-5">
         <button className="bg-black cursor-pointer" onClick={toggleMenuHandler}>
-          <div className=' w-full'>
+          <div className=" w-full">
             <img
               className="max-w-5 object-cover h-8 bg-black"
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAANlBMVEUAAAD///+Tk5Pp6em9vb1OTk59fX3x8fGCgoK6urqsrKz8/Pza2tpbW1tXV1fNzc1DQ0NISEg1PRi4AAABKElEQVR4nO3dSW7DMAwFUA9xJme8/2XbLrqWURlhRb13An7YEWlAYIYBAAAAAAAAAAAAAIB/736eWnS+b8x3nMdWzcctAS/RZVa5lANeo2usdC0FXKIrrLYUEh6iC6x2KCQ8RRdY7VRIGF3fDrpPmP8tzX/S5O8W+Tt+B1NbB5P3t0ejX0+PjfkAAAAAAAAAAD7o+Fyjr438yfrcdtnk1e51mnGcX+WAS5vP79f6LiZs+Qn+mEsBp+gKq02FhLfoAqvdCgmj69uBhO3r/neY/yzN3w+Hd/qZJv9cOuT/tgAAAAAAAAAA+KjsO/fS701Mv/sy/f7S/Dto8+8Rzr8LOrq+HXSfMP9bmv+kyd8t8nf8Dqa2DibvIf//PQEAAAAAAAAAAAAAEOgLkyQpOro++/0AAAAASUVORK5CYII="
