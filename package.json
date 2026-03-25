@@ -2,6 +2,7 @@
   "name": "video-streaming-platform",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://suggestqueries.google.com",
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.1",
     "@testing-library/dom": "^10.4.0",
